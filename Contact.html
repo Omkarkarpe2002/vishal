@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar Karpe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="https://kit.fontawesome.com/2cf330fbad.js" crossorigin="anonymous"></script>
+<body>
+<div class="contactcontainer">
+    <div class="sidebar">
+        <nav>
+            <li style="color: #f9bf3f; background-color: rgb(11, 9, 9);
+            display: inline-block;height: 10px;margin-right: 700px;"
+           > <a1 href="/">Omkar Karpe</a1></li>
+
+<ul >
+        <!-- <div class="name">Omkar</div> -->
+        <li><a href="/">Home</a></li>
+        <li><a href="/About.html">About</a></li>
+        <li><a href="/Projects.html">Projects</a></li>
+        <li><a href="/Books.html">MyReads</a></li>
+        <li><a href="/Contact.html">Contact Me</a></li>
+    </ul>
+    </nav>
+    </div>
+        <div class="main">
+            
+            <div class="head">
+                <h1>Contact Me</h1>
+            </div>
+
+            <div class="contactform">
+ <!-- <h1>Contact Me</h1> -->
+ <div class="done">
+
+               <form onsubmit="sendEmail(); reset(); return false;">
+   
+                   <div class="input-group">
+                           <input type="text" id="name" placeholder="Your name" required>
+                           <!-- <label for="name">Your Name</label> -->
+                   </div>
+                   <div class="input-group">
+                           <input type="text" id="number" placeholder="Your Phone Number"required>
+                           <!-- <label for="number">Your Phone Number</label> -->
+                   </div>
+
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Your email" required>
+                        <!-- <label for="email">Your email</label> -->
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <!-- <input type="text" id="name" required> -->
+                        <!-- <label for="message">Your Message</label> -->
+                    </div>
+                    <button type="button" class="btn1">Send</button>
+
+               </form> 
+            </div>
+            <div class="othercontact">
+                <div class="border">
+                 <div class="addr">
+                    <i class="fa-solid fa-location-dot"></i> 
+                    At Post Dhondrai, Taulka Georai, Dist Beed, Maharashtra              
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone-flip"></i>
+                     PhoneNo: 9767925888
+                </div>
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                     Email:omkarbkarpe02@gmail.com
+                </div>
+            </div>
+
+                <div class="social">
+                    
+                    <a href="https://www.instagram.com/_omkarpe_/"><img src="logo-instagram.svg"alt=""></a>
+                    <!-- <i class="fa-brands fa-instagram"></i> -->
+                    <!-- <a href="www.linkedin.com/in/omkar-karpe-883a0b20b"><img src="linkedin logo.png" alt=""></a> -->
+                    <a href="www.linkedin.com/in/omkar-karpe-883a0b20b"><img src="logo-linkedin.svg" alt=""></a>
+                </div>
+
+
+            </div>
+               
+
+            </div>
+
+        </div>
+   
+</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail()
+    {
+    Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+</body>
+</html>
